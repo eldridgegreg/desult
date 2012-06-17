@@ -1,0 +1,35 @@
+# Mixer Fixer
+### Saturday, June 16th, 2012 - Evening
+
+A long, long time ago, we had a working stand mixer.  The KitchenAid Professional 600.  It served us well; we made all manner of dough with its massive hook.  One day, in the midst of such dough making, the machine gave a massive clank, and began to whir without any further motion in the actual mixing bowl.  Upon inspection, we discovered that the mixing arm assembly had somehow fallen down about half a centimeter, with no evident cause.  The mixer motor spun, but the arm spun no more.  And a mixer that stops spinning is not much of a mixer, it turns out.
+
+![The offending situation.](/images/blog/20120616_symptom2.jpg)
+
+Jill took it upon herself to disassemble our fallen friend.  She found great tutorials on YouTube for disassembly and repair. [These](http://www.youtube.com/watch?v=BZp8TuhYkwc&feature=related) [videos](http://www.youtube.com/watch?v=Gd46amc8r2M&feature=related) [were](http://www.youtube.com/watch?v=VeCiivPt7hk&feature=related) very clear and helpful on how to take the beast apart, replace broken gears, and re-assemble.
+
+Unfortunately, our problem wasn't a stripped or worn gear.  The whole planetary assembly had slipped down, and we couldn't figure out why.  We stripped the transmission, poked around, scratched our heads and started looking at each individual piece.  All the parts looked basically sound - there was a little bit of damage to the pyramid gear, but it was superficial and didn't seem like it would cause any vertical play.  The planetary assembly similarly looked in fine shape.
+
+We ran through the manual a few times, and everything appeared to be in order.  So we reassembled the thing and as we put it back together, I realized I could ram the planetary into the base and it would fit in the appropriate place - but as soon as I released it, it dropped.  The pyramid gear and worm gear are attached to the planetary drive shaft, but there was no other apparent piece that would hold the planetary assembly up.  When the whole assembly dropped, the worm gear clearly would be too low to be driven by the worm and motor.
+
+![The internal symptom.](/images/blog/20120616_symptom.jpg)
+
+![Without gears.](/images/blog/20120616_broken.jpg)
+
+Looking at the underside of that area, we finally discovered the culprit.  There was a friction fit sheath that (formerly) raised that bearing by about a centimeter, thus holding the planetary assembly in the proper place.  The problem was, enough grease had seeped down from the transmission case that it was pretty much hopeless to ever get the thing to be stable in the "locked" position.
+
+[!The culprit.](/images/blog/20120616_cause.jpg)
+
+Another major issue was that none of the materials we ever found for the mixer identified that there should even be an independent part there.  Technically, I suppose there was no independent part - I could never remove the bearing, shaft or sheath.
+
+The good news was that [Mending Shed](http://www.mendingshed.com/) had basically every independent part of the mixer available for sale.  It turned out we had to buy [the entire motor mount](http://www.mendingshed.com/9706047.html), as it is machined as one big part.  This made me a bit wary, as it meant we had to dismount and remount the motor, but it turned out not to be too difficult.  Our theoretical solution was also a little worrisome, as we couldn't really tell from the site whether or not this would include the clip that had failed, or exactly whether this would really solve the problem.
+
+Luckily, the new part had been vastly improved over our original.  Now, instead of a friction fit sheath and some sort of floating bearing, the whole mount was one piece of metal.
+
+[!The fix.](/images/blog/20120616_fix.jpg)
+[!The fix, from above.](/images/blog/20120616_replacement.jpg)
+
+We replaced the motor mount, reassembled the transmission, greased it to kingdom come, and voila!
+
+[!Fixed.](/images/blog/20120616_fixed.jpg)
+
+Miraculously, the machine is back to normal... with a little bit of patchwork coloration.  We gave it a test doughing this weekend and it is back in top form. Victory!
