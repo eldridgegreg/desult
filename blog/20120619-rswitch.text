@@ -1,0 +1,6 @@
+# rswitch
+### Tuesday, June 19th, 2012 - Evening
+
+I've ended up buying a Retina Macbook Pro for a variety of reasons.  That's another blog post.  This blog post is about a little utility I wrote to switch to the native resolution.
+
+It's called [rswitch](https://github.com/eldridgegreg/rswitch) and all it does is switch from the current resolution to the native (2880x1800).  Enjoy!
