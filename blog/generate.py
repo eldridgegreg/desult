@@ -21,7 +21,8 @@ def generate_html(textFile):
     return html[0]
 
 def save_html_in_template(htmlFile, markdown, template):
-    complete = template.substitute(filename=htmlFile, blogitem=markdown)
+    title = markdown.splitlines()[0].replace('<h1>', '').replace('</h1>', '')
+    complete = template.substitute(filename=htmlFile, blogitem=markdown, title=title)
     output = open(htmlFile, 'w')  
     output.write(complete)
     output.close()
