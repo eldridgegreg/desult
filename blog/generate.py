@@ -1,10 +1,12 @@
 import os
+import stat
 import subprocess
 import string
 
 ITEM_TEMPLATE = './template.html'
 INDEX_TEMPLATE = './index-template.html'
 SLUG_FORMAT = "{}\n{}\n{}\n<a href='{}'>Read more...</a>"
+GEN_PERM = stat.S_IXUSR | stat.S_IWUSR | stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH
 
 def blog_files():
     allfiles = sorted(os.listdir('.'))
@@ -25,12 +27,13 @@ def save_html_in_template(htmlFile, markdown, template):
     complete = template.substitute(filename=htmlFile, blogitem=markdown, title=title)
     output = open(htmlFile, 'w')  
     output.write(complete)
+    os.fchmod(output.fileno(), GEN_PERM)    
     output.close()
     
 
 def read_template(filename):
     templateFile = open(filename, 'r')
-    templateData = templateFile.read()
+    templateData = templateFile.read()    
     templateFile.close()
     return string.Template(templateData)
 
@@ -61,6 +64,7 @@ def main():
     index_template = read_template(INDEX_TEMPLATE)
     indexFile = open('./index.html', 'w')
     indexFile.write(index_template.substitute(blogindex="\n<hr/>\n".join(slugs)))
+    os.fchmod(indexFile.fileno(), GEN_PERM)
     indexFile.close()
     print 'Wrote index; complete.'
     
