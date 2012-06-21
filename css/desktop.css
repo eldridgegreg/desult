@@ -1,20 +1,21 @@
-body { background-color: #BC8F44; margin: 3px 0px 3px 0px; font-family: 'Nunito', sans-serif; font-weight: 300; }
+body { background-color: #BC8F44; margin: 3px 0px 3px 0px; font-family: 'Helvetica', 'Arial', sans-serif; font-weight:300 }
 
 a { color: #399D87; text-decoration: none; }
 a:hover { text-decoration: none; color: #005C47; }
 
-h1 { color: #674000; margin: 0px }
-h2 { color: #672700; margin: 0px }
-h3 { color: #61000F; margin: 0px }
-p { margin: 5px 0px 5px 0px; }
+h1 { font-family: 'Vollkorn', serif; color: #674000; margin: 0px }
+h2 { font-family: 'Vollkorn', serif; color: #672700; margin: 0px }
+h3 { font-family: 'Vollkorn', serif; font-size: 15px; font-weight: normal; color: #61000F /*#666*/; margin: 0px 0px 5px 0px; }
+p { margin: 10px 0px 10px 0px; line-height: 125% }
+
 .maincolumn {
-	width: 768px;
+	width: 1000px;
 	margin: 0px auto 0px auto;
 	padding: 0px;
 }
 
 .sitetitle {
-	padding: 20px 0px 0px 20px;
+	padding: 40px 0px 0px 50px;
 	margin: 0px;
 	background-color: #870015;
 	color: white; /* #BC5F26; */
@@ -23,7 +24,7 @@ p { margin: 5px 0px 5px 0px; }
 
 .sitesubtitle {
 	margin: 0px;
-	padding: 0px 0px 0px 20px;
+	padding: 0px 0px 0px 50px;
 	font-weight: 700;
 	font-size: 14pt;
 	background-color: #723A17;
@@ -31,19 +32,21 @@ p { margin: 5px 0px 5px 0px; }
 	border: 1px solid #870015;	
 }
 
+.linkbar {
+        font-family: 'Vollkorn', serif;
+        font-weight: 700;
+        padding: 5px 0px 25px 50px;
+        background-color: #870015;
+        color: #BC8F44; /* #61000F; */
+}
+
+
 .sitecontent {
-	padding: 10px 20px 10px 20px;
+	padding: 40px 300px 10px 50px;
 	border: 1px solid #870015;
 	margin: 0px;
 	background-color: white;
 	color: black;
-}
-
-.linkbar {
-	font-weight: 700;
-	padding: 5px 0px 20px 20px;
-	background-color: #870015;
-	color: #BC8F44; /* #61000F; */
 }
 
 .current {
