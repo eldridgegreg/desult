@@ -1,7 +1,7 @@
 # Miscellaneous
 ### Friday, June 22th, 2012 - Late, again.  Again.
 
-Quick updates.  Did a quick new project.  Feature ideas for blog.  Self-recrimination.  What's going on at work.  Home media sharing.  I'm sure you're salivating by now.  I'm absolutely sure of it.  You can't help it!
+Quick updates.  Did a quick new project.  Feature ideas for blog.  Self-recrimination. Home media sharing.  I'm sure you're salivating by now.  I'm absolutely sure of it.  You can't help it!
 
 ## Did you say PuTTY?
 
@@ -22,7 +22,16 @@ More interesting is the idea of an RSS feed.  I think this should be a simple ar
 
 ## Bad to the bone
 
-![Bad to the bone.][img-bone]
+![Bad to the bone.][img-bone]  
+*Original photo by Kasra Ganjavi*
+
+I've been updating my blog a lot lately - and that means I'm not doing as much work on my projects as I would like.  I plan to catch up this weekend.  We'll see.
+
+## Home Media Sharing
+
+Right now, I'm headed down the road of iTunes and Apple TV.  I'm OK with this for the minute, but there are a lot of annoying pieces so far.  Part of the problem is the iPad Videos app - the default iOS app is quite fragile when it comes to metadata.  It's never clear what exactly will trash the metadata store on the device, but it happens very frequently.  My first run-in with this was due to TV episode ID conflicts... which trashed the movie metadata for some reason.  I've recently had the symptom recur, even though I haven't added any updates.
+
+I am definitely in the market for an iTunes replacement for sharing (for a variety of reasons), as well as endpoint replacements, if anyone has any good ideas.  The Apple TV interface, form factor, and price is pretty hard to beat though.
 
 [putty-image-src]: http://googleblog.blogspot.com/2005/12/im-feeling-silly.html  "A lot of putty."
 [putty-home]: http://www.chiark.greenend.org.uk/~sgtatham/putty/ "PuTTY project"
