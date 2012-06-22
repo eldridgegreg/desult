@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>desult.blog :: Miscellaneous</title>
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+        <link href='/css/desktop.css' rel='stylesheet' type='text/css'>      
+        <meta charset="UTF-8">  
+        <meta property="fb:app_id" content="337412879657121" />    
+        <meta property="og:title" content="Miscellaneous" />
+        <meta property="og:type" content="blog" />
+        <meta property="og:url" content="http://www.desult.com/blog/20120622_misc.html" />
+        <meta property="og:image" content="http://www.desult.com/images/og-default.png" />
+        <meta property="og:site_name" content="desult.com" />
+    </head>
+    <body>
+        <!-- FB include -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>    
+        <!-- end FB include -->
+        
+        <div class="maincolumn">
+<!--#include virtual="../includes/header.html" -->
+            <div class="linkbar"><a href="/">home</a> :: <a href="/blog/">blog</a> :: <a href="/projects.html">projects</a> :: <a href="/cv.html">cv</a></div>
+            <div class="sitecontent">
+<h1>Miscellaneous</h1>
+
+<h3>Friday, June 22th, 2012 - Late, again.  Again.</h3>
+
+<p>Quick updates.  Did a quick new project.  Feature ideas for blog.  Self-recrimination.  What's going on at work.  Home media sharing.  I'm sure you're salivating by now.  I'm absolutely sure of it.  You can't help it!</p>
+
+<h2>Did you say PuTTY?</h2>
+
+<p><img src="http://googleblog.blogspot.com/uploaded_images/putty_clay-738871.jpg" width="50%" /> <br />
+<em><a href="http://googleblog.blogspot.com/2005/12/im-feeling-silly.html" title="A lot of putty.">A massive, massive amount of putty.</a></em></p>
+
+<p>Necessity being the father of invention, I did an ultra quick and dirty repackage of PuTTYgen from the wonderful <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/" title="PuTTY project">PuTTY</a> today.  My company still is mostly in Windows land, and I always get SSH keys in PPK format, because everyone uses PuTTY.</p>
+
+<p>This is useless to me on ye olde Macintosh - I usually just make them convert it and resend it.  This has become an annoying cycle.</p>
+
+<p>PuTTYgen can convert the file to PEM easily... but the binaries are for Windows.  A quick googling turned up no easy solution (instead requiring MacPorts - I went down this road installing GIMP a while back, and it made me happy to pay for Photoshop, if that says anything).  I scratched my head about what would be necessary for my own use, and concluded that it was likely that I could just rip it out of the source.  It turned out the entire PuTTYgen utility compiled fine in Xcode without any modification.  So, if you ever need it, <a href="https://github.com/eldridgegreg/puttygen-osx" title="PuTTYgen Mac OS X port">here you go!</a>.</p>
+
+<h2>Features for blog...</h2>
+
+<p>Of course, a few days after I finish my little blog generator, I am finding ways in which it is not quite what I want.  <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>'s handling of little HTML intricacies isn't quite what I want (image sizing, other layout issues).  This is, of course, as designed - that's OK.  I doubt I'm going to move away from Markdown, but I might tweak it a little bit, or see if I can find a forked version that does what I need.</p>
+
+<p>More interesting is the idea of an RSS feed.  I think this should be a simple artifact of my existing generation process, especially once I add TOC generation, but I need to learn about what exactly goes into the feed.  I haven't looked at the guts of an RSS feed for quite a while.  I don't have any idea if anyone would want to subscribe to this, but it'd be a fun exercise.  Hopefully I'll spin out version 2 sometime in July.</p>
+
+<h2>Bad to the bone</h2>
+
+<p><img src="/images/blog/20120622_bone.jpg" alt="Bad to the bone." /></p>
+
+<br/>
+<div style="float: left; margin: 0px 10px 0px 0px"><script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script></div>
+<div style="margin: 10px 0px 0px 0px" class="fb-like" data-href="http://www.desult.com/blog/20120622_misc.html" data-send="true" data-width="300" data-show-faces="false" data-font="lucida grande"></div>
+<br/>
+<div class="fb-comments" data-href="http://www.desult.com/blog/20120622_misc.html" data-num-posts="5" data-width="650"></div>
+            </div>
+        </div>
+    </body>
+</html>

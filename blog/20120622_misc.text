@@ -1,0 +1,31 @@
+# Miscellaneous
+### Friday, June 22th, 2012 - Late, again.  Again.
+
+Quick updates.  Did a quick new project.  Feature ideas for blog.  Self-recrimination.  What's going on at work.  Home media sharing.  I'm sure you're salivating by now.  I'm absolutely sure of it.  You can't help it!
+
+## Did you say PuTTY?
+
+<img src="http://googleblog.blogspot.com/uploaded_images/putty_clay-738871.jpg" width="50%" />  
+*[A massive, massive amount of putty.][putty-image-src]*
+
+Necessity being the father of invention, I did an ultra quick and dirty repackage of PuTTYgen from the wonderful [PuTTY][putty-home] today.  My company still is mostly in Windows land, and I always get SSH keys in PPK format, because everyone uses PuTTY.
+
+This is useless to me on ye olde Macintosh - I usually just make them convert it and resend it.  This has become an annoying cycle.
+
+PuTTYgen can convert the file to PEM easily... but the binaries are for Windows.  A quick googling turned up no easy solution (instead requiring MacPorts - I went down this road installing GIMP a while back, and it made me happy to pay for Photoshop, if that says anything).  I scratched my head about what would be necessary for my own use, and concluded that it was likely that I could just rip it out of the source.  It turned out the entire PuTTYgen utility compiled fine in Xcode without any modification.  So, if you ever need it, [here you go!][puttygen-osx].
+
+## Features for blog...
+
+Of course, a few days after I finish my little blog generator, I am finding ways in which it is not quite what I want.  [Markdown][markdown]'s handling of little HTML intricacies isn't quite what I want (image sizing, other layout issues).  This is, of course, as designed - that's OK.  I doubt I'm going to move away from Markdown, but I might tweak it a little bit, or see if I can find a forked version that does what I need.
+
+More interesting is the idea of an RSS feed.  I think this should be a simple artifact of my existing generation process, especially once I add TOC generation, but I need to learn about what exactly goes into the feed.  I haven't looked at the guts of an RSS feed for quite a while.  I don't have any idea if anyone would want to subscribe to this, but it'd be a fun exercise.  Hopefully I'll spin out version 2 sometime in July.
+
+## Bad to the bone
+
+![Bad to the bone.][img-bone]
+
+[putty-image-src]: http://googleblog.blogspot.com/2005/12/im-feeling-silly.html  "A lot of putty."
+[putty-home]: http://www.chiark.greenend.org.uk/~sgtatham/putty/ "PuTTY project"
+[puttygen-osx]: https://github.com/eldridgegreg/puttygen-osx "PuTTYgen Mac OS X port"
+[markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
+[img-bone]: /images/blog/20120622_bone.jpg
