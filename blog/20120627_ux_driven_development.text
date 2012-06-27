@@ -62,6 +62,8 @@ Use the power that almost every modern platform gives you - define duplicate int
 
 ## Conclusion
 
+Above all, consider the value you are adding with everything you do.  If you're spending a week optimizing away data access from 500ms to 50ms, you aren't really considering the user (who is often going to suffer higher transport latency regardless).  If you're optimizing from 5000ms to 500ms, you're probably making a much bigger impact.  Prioritize work based on UX impact, and you will find your work being noticed and appreciated by the most important participant in the development process - your user.
+
 Every day in your work, you can and should be thinking on this level.  It is all too easy to get sucked away into the minutiae of whatever you're working on, focus on the immediate tasks and demands at hand, and lose sight of the real goal - providing an awesome experience for whoever or whatever is consuming the end product you are creating.  Whatever your position in the development process, you have the ability (and in my opinion, the responsibility) to identify and push for UX improvements.
 
 In future installments, I will look at this from the project management point of view, as well as share some examples and guidelines I've stumbled onto in the mobile space.

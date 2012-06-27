@@ -78,7 +78,7 @@ decisions should always be what is the best experience for the user.</pre>
 <p><img src="/images/blog/20120627_list2.jpg" alt="I'm getting woozy..." /> <br />
 <em>Hey Outlook Web Access Light!  How many items are in each view?</em></p>
 
-<p><img src="/images/blog/20120627_list1.jpg" alt="MANY!!" style="width: 50%" /> <br />
+<p><img src="/images/blog/20120627_list1.jpg" alt="MANY!!" width="75%" /> <br />
 <em>Maybe Gmail will know!  Maybe not.</em></p>
 
 <p>As you dig into list interaction, you quickly get into stickier problems.  One very common one is sorting.  Offering column sort options is pretty common nowadays, largely thanks to more and more powerful UI libraries, but you can't stop there.  One feature that I notice frequently in what I would class as "good" apps is sticky row during sort.  You select a row.  You realize you want to find a related row.  You change the sort parameter to whatever is "near" relation (sender, date, subject, whatever).  In "good" apps, you'll at least stay in a view window of the current message.  Some (e.g. Apple Mail) will keep you literally on the original message.</p>
@@ -94,6 +94,8 @@ decisions should always be what is the best experience for the user.</pre>
 <p>Use the power that almost every modern platform gives you - define duplicate interfaces that can vend JSON (for ease of debugging) and optimized/compressed binary formats (for maximum slimness).  In almost every platform that I can think of, this should be very simple and very clean to do.  Check out cool tools like <a href="https://developers.google.com/protocol-buffers/" title="Google Protocol Buffers">Google Protocol Buffers</a>.</p>
 
 <h2>Conclusion</h2>
+
+<p>Above all, consider the value you are adding with everything you do.  If you're spending a week optimizing away data access from 500ms to 50ms, you aren't really considering the user (who is often going to suffer higher transport latency regardless).  If you're optimizing from 5000ms to 500ms, you're probably making a much bigger impact.  Prioritize work based on UX impact, and you will find your work being noticed and appreciated by the most important participant in the development process - your user.</p>
 
 <p>Every day in your work, you can and should be thinking on this level.  It is all too easy to get sucked away into the minutiae of whatever you're working on, focus on the immediate tasks and demands at hand, and lose sight of the real goal - providing an awesome experience for whoever or whatever is consuming the end product you are creating.  Whatever your position in the development process, you have the ability (and in my opinion, the responsibility) to identify and push for UX improvements.</p>
 
