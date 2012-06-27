@@ -3,12 +3,12 @@
 
 If there is one thing that I have learned in my first ten years of professional software development, it is that user experience driven development is far and away the most successful approach I have ever taken or observed.  I plan to write a few blog posts exploring the topic and how it is relevant to everyone involved in software development.
 
-A silly, broad statement.  Nonetheless, one I have become more and more fond of - especially over the past few years, where I have been largely responsible for the direction of many projects' lifespans.  To begin, let me try to briefly define what I mean by "user experience driven."
+So, I began with a silly, broad statement.  Guilty as charged.  Nonetheless, eI have become more and more fond of this idea - especially over the past few years, where I have been largely responsible for the direction of many projects' lifespans.  To begin, let me try to briefly define what I mean by "user experience driven."
 
 <pre>Whatever your app is meant to do, the first driver behind design and implementation
 decisions should always be what is the best experience for the user.</pre>
 
-At the end of the day, your software is useless without users.  The user - whether a paying consumer, a co-worker, or even another machine - should ALWAYS come first.  You need to make working with your software a pleasant, straightforward experience.  If you don't, someone will do it better, or your user will just give up.  There are plenty of conflicting drivers - resource availability, level of effort, how interesting the work is to a developer, how visible the work is to project sponsors, and so on, ad infinitum.  It's up to you to ensure that you do your best to align your 
+At the end of the day, your software is useless without users.  The user - whether a paying consumer, a co-worker, or even another machine - should ALWAYS come first.  You need to make working with your software a pleasant, straightforward experience.  If you don't, someone will do it better, or your user will just give up.  There are plenty of conflicting drivers - resource availability, level of effort, how interesting the work is to a developer, how visible the work is to project sponsors, and so on, ad infinitum.  It's up to you to ensure that you do your best to align your work with the needs of the user.
 
 The direct implications of this can vary wildly from project to project.  The absolute bedrock of the idea is that your application must:
 
@@ -16,19 +16,23 @@ The direct implications of this can vary wildly from project to project.  The ab
 * Work!  If your app doesn't fulfill its basic contract, there is no possible good user experience.
 * Engage!  If you don't have an audience, you don't have a user experience.  Except maybe your mom, or your boss.  God forbid the twain should meet. [Hi, mom.]
 
-Hopefully, all of these are already covered for your project.  If not, ignore everything else I say and fix those things.  For everyone else, you can extrapolate user experience to nearly any aspect of your project. For this article, I will touch on a common development task, and highlight how developers can directly and positively impact user experience in any project.  Impossible, you say!  As a developer, many of the core decisions that drive user experience are out of your hands.  Someone else defines the requirements.  Someone else (hopefully a decent UX/UI designer) defines the literal look and feel of your app.  Frequently, you won't be building an app from scratch, and you'll need to stick with the existing user interface, either in part or in whole.
+Hopefully, all of these are already covered for your project.  If not, ignore everything else I say and fix those things.  For everyone else, you can extrapolate user experience to nearly any aspect of your project. For this article, I will touch on a common development task, and highlight how developers can directly and positively impact user experience in any project.
+
+## But HOW?!
+
+Impossible, you say!  As a developer, many of the core decisions that drive user experience are out of your hands.  Someone else defines the requirements.  Someone else (hopefully a decent UX/UI designer) defines the literal look and feel of your app.  Frequently, you won't be building an app from scratch, and you'll need to stick with the existing user interface, either in part or in whole.
 
 This doesn't let you off the hook.
 
 Every piece of work that you contribute to the app, along with every decision you make on prioritization or resource allocation, can and should be driven by user experience.  If you're not concerned about the impact you're having on the end user's experience, odds are you're contributing negatively.  If you think back on delivering apps, you can probably think of times when you've run face first into this kind of problem.
 
-*Customer*: Hey Greg, thanks for shipping me that build last night...
-*Greg*: Uh oh, you sound disappointed.  Did XYZ not work for you?
-*Customer*: Yeah, I don't really "get" the way widget XYZ works.
-*Greg*: Well, we tested it thoroughly, it works in our QA environment, and I personally tested it on a machine that duplicates your configuration.  What exact problem are you having?
-*Customer*: I can't sort by field Foo.
-*Greg*: Sure you can!  You just... <complicated series of user unfriendly steps>
-*Customer*: Oh... OK.  That sure seems like a complicated series of user unfriendly steps...
+*Customer*: Hey Greg, thanks for shipping me that build last night...   
+*Greg*: Uh oh, you sound disappointed.  Did XYZ not work for you?   
+*Customer*: Yeah, I don't really "get" the way widget XYZ works.   
+*Greg*: Well, we tested it thoroughly, it works in our QA environment, and I personally tested it on a machine that duplicates your configuration.  What exact problem are you having?   
+*Customer*: I can't sort by field Foo.   
+*Greg*: Sure you can!  You just [insert complicated series of user unfriendly steps]...
+*Customer*: Oh... OK.  That sure seems like a complicated series of user unfriendly steps...   
 
 Finding the easiest or best solution for the developer rarely overlaps the best decision for the user.  It's tedious to do many things that users like.  It's certainly tedious to go through UI test cycles, gather user feedback, and just spend time doing the menial tasks that most apps boil down into.  But in my experience, it is the best way to avoid situations like the above - where everything "works" until the users actually get involved.
 
@@ -38,19 +42,19 @@ Many development teams don't really have the resources to do big UX feedback pro
 
 When working with any software, especially mobile software, it is incredibly important to provide valid and accessible feedback to the user on their interactions with lists.  The user should never be confused where he is in a list - pagination (if used), should be clear and accurate.  Even if I am going to be frustrated with the number of results (e.g. Apple App Store), or even if the number isn't directly useful (e.g. Google Search Results), this is a critical user experience element that developers tend to think of last.
 
-![I'm getting woozy...][WALpages]
+![I'm getting woozy...][WALpages]   
 *Hey Outlook Web Access Light!  How many items are in each view?*
 
-![MANY!!][GMpages]
+![MANY!!][GMpages]   
 *Maybe Gmail will know!  Maybe not.*
 
 As you dig into list interaction, you quickly get into stickier problems.  One very common one is sorting.  Offering column sort options is pretty common nowadays, largely thanks to more and more powerful UI libraries, but you can't stop there.  One feature that I notice frequently in what I would class as "good" apps is sticky row during sort.  You select a row.  You realize you want to find a related row.  You change the sort parameter to whatever is "near" relation (sender, date, subject, whatever).  In "good" apps, you'll at least stay in a view window of the current message.  Some (e.g. Apple Mail) will keep you literally on the original message.
 
-Microsoft's Outlook (to my memory) was pretty good about this.  Web Access Light, on the other hand, is not so good about this.  Weirdly, it pins you to the page.  For example, find a message midway through a folder of some large number of messages, sorted by date.  Realize you want to see all messages by this sender, in this folder.  Select the message, and sort by subject.   You'll be on whichever page you were previously on.  I can't really imagine this being very useful, except in that when you realize that WOL lost your recently found message, you can pop right back to the previous sort parameter.  Gmail doesn't even support sort, a bit of an odd decision.
+Microsoft's Outlook (to my memory) was pretty good about this.  Web Access Light, on the other hand, is not so good about this.  Weirdly, it pins you to the page.  For example, find a message midway through a folder containing some large number of messages.  Realize you want to see all messages by this sender, in this folder.  Select the message, and sort by subject.   You'll be on whichever page you were previously on (e.g. 5 of 10).  I can't really imagine this being very useful, except in that when you realize that WAL lost your recently found message, you can pop right back to the previous sort parameter.  Gmail doesn't even support sort, a bit of an odd decision.
 
-WAL and Gmail also break most of the other common interactions you may want.  You're given pagination, but you have to guess how many items and pages there are.  You're given variable width columns, but you can't resize them yourself.  The context of the list itself can be a little hazy (search results for example).
+WAL and Gmail also break many of the other common interactions you may want.  You're given pagination, but you have to guess how many items and pages there are.  You're given variable width columns, but you can't resize them yourself.  The context of the list itself can be a little hazy (search results for example).
 
-WAL is overall very usable, and I'm sure that most of the time and effort went into the full Web Access Outlook that those increasingly rare IE users have access to.  Gmail is a good product, but they make a lot of "my way or the highway" decisions that are still unnatural to email veterans.  However, these are simple examples of easily fixed user experience problems.  When designing the pagination data source, the developer should be thinking, "*What data might a user want me to return here?*" Number of results, number of pages and so forth all jump out.  When the developer who implemented that pagination HTML finished, he should be thinking, "*Well, this is a really annoying display mechanism.  I should really talk to my [designer|BA|PM|whoever] about at least adding the last page index to this display.*"
+Both products are overall very usable, and I'm sure that most of the time and effort went into the full Web Access Outlook that those increasingly rare IE users have access to.  Gmail is a great product, but they make a lot of "my way or the highway" decisions that are still unnatural to email veterans.  However, these are simple examples of easily fixed user experience problems.  When designing the pagination data source, the developer should be thinking, "*What data might a user want me to return here?*" Number of results, number of pages and so forth all jump out.  When the developer who implemented that pagination HTML finished, he should be thinking, "*Well, this is a really annoying display mechanism.  I should really talk to my [designer|BA|PM|whoever] about at least adding the last page index to this display.*"
 
 One thing that both WAL and Gmail are exceptionally good at are being fast and responsive in list browsing and searching.  This is one area of development that even the most UI constrained person can impact.  It is also exceptionally relevant to mobile applications.  Nowadays, between robust traditional RDBMS stacks and interesting NoSQL type document stores, it is easier than ever to write a fast simple query.  It gets a lot more dicey when you're searching and slicing large data sets, but it behooves you to optimize these operations at every level - query, remote cache, transport, local cache, local transform/refine.  Avoid wire sloppiness (verbosity and overhead are often easier to trim than you think).  Five years ago, everything was ten layers of self describing "future proof" XML.  Even now, pretty thick JSON is used extensively, and for debugging, this is great.  For user experience... I'm not convinced.
 
@@ -64,4 +68,4 @@ In future installments, I will look at this from the project management point of
 
 [GPB]: https://developers.google.com/protocol-buffers/ "Google Protocol Buffers"
 [WALpages]: /images/blog/20120627_list2.jpg
-[GMpages]: /images/blog/20120627_list2.jpg
+[GMpages]: /images/blog/20120627_list1.jpg
